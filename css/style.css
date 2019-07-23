@@ -151,6 +151,7 @@ left padding to change the design of the dropdown content */
 .fa-caret-down {
   padding-right: 8px;
   font-style: none;
+  float: none;
 }
 
 /***************************************/
