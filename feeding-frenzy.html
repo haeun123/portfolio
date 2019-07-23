@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Holly Park | Feeding Frenzy Game</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+
+<!-- TOP NAVIGATION -->
+
+	<nav>
+	    <ul id="hollylist">
+	    	<li class="hollyitem" id="#holly"><a href="index.html">Holly Park</a></li>
+	    </ul>
+	    <ul id="navlist">
+	    	<li class="navitem"><a href="index.html#work">Portfolio</a></li>
+		    <li class="navitem"><a href="art.html">Artwork</a></li>
+		  	<li class="navitem"><a href="about.html">About</a></li>
+	   	</ul>
+    </nav>	
+
+ <!--   SIDE NAVIGATION  -->
+
+    <div class="sidenav">
+    	<a href="#overview">Overview</a>
+    	<a href="#process">Process</a>
+    	<a href="#research">Contextual Research</a>
+    	<a href="#learning_goals">Educational/ Experience Goals</a>
+    	<a href="#mechanics_ideation">Ideation for Game Mechanics</a>
+    	<button class="dropdown-btn"> 
+    		<i class="fa fa-caret-down no-italics">Prototyping/ Playtesting</i>
+  		</button>
+    	<div class="dropdown-container">
+    		<a href="#prototype_1">Prototype 1</a>
+    		<a href="#playtest_1">Playtest 1</a>
+    		<a href="#prototype_2">Prototype 2</a>
+    		<a href="#playtest_2">Playtest 2</a>
+    		<a href="#prototype_3">Prototype 3</a>
+    		<a href="#playtest_3">Playtest 3</a>
+    		<a href="#prototype_4">Prototype 4</a>
+    		<a href="#playtest_4">Playtest 4</a>
+    		<a href="#prototype_5">Prototype 5</a>
+    	</div>
+    	<a href="#final_expo">Final Expo</a>
+    	<a href="#final_prototype">Final Design</a>
+    	<a href="#evaluation">Evaluation</a>
+    </div>
+
+
+ <!-- CASE STUDY MAIN CONTENT -->
+
+    <main class="casestudy-container">
+    	<div class="casestudy-content">
+
+    	<h1>Feeding Frenzy Game</h1>
+		<p>I worked in a team of two to create Feeding Frenzy, an educational board game that teaches about trophic interactions in food webs and the impact of human activities on the ecosystem.</p>
+		<div class="img-container">
+			<img src="images/feeding-frenzy/expo.jpg" alt="final game expo">
+		</div>
+		<p>Our game contains two parts; In Part 1, 2-4 players piece together the strange creatures of Woomple Woods and figure out who eats who in this fictional ecosystem while competing to claim as many correct links between species as possible. In Part 2, players explore the impact of human activities on their constructed web of animals and how these effects translate to the real world.</p>
+
+		<h3>Team</h3>
+		<p>Holly Park, Connie Chau</p>
+
+		<h3>My Role</h3>
+		<p>I worked with my teammate equally on all parts of the design process, including ideation, prototyping, playtesting, iterations, and evaluation.</p>
+
+		<h3>Timeline</h3>
+		<p>03/21/19 - 05/02/19</p>
+
+		<h2><a name="process"></a>Process</h2>
+
+		<p>In Designing for Educational Games, we were tasked with designing a successful educational game in terms of the EDGE framework. The EDGE framework assesses the educational potential of a game by integrating game theory (mechanics-dynamics-aesthetics), learning science principles, and clearly defined educational goals. The process was highly complex as we needed to consider all components of the framework throughout.</p>
+
+		<p>We began by generating ideas for an educational game in terms of the educational goal component of the EDGE framework. We decided on a cellular respiration game for all ages, and started to think up core mechanics for our game for the initial project pitch and peer feedback.</p>
+		<p>After further research about the process of cellular respiration and thinking through various mechanics, we foresaw that the domain space of cellular respiration would make for an ineffective learning game due to the level of technical and content knowledge that the topic involves. This would make transfer of skills/knowledge from the game context to real life difficult as well.</p>
+
+		<p>We decided to consider broader educational domains that would better integrate with game design (MDA), and through another brainstorming process we defined our educational domain. The domain space we investigated is the role, impact, and importance of keystone species. </p>
+		
+		<h3><a name="research"></a>Contextual Research</h3>
+		<p>We did further contextual research in the domain of keystone species and the kelp biome to define our learning objectives in more detail.</p>
+		<p>A keystone species is described as an organism that has a significantly large impact on an ecosystem; it maintains it by controlling populations on which it feeds on or by shaping the environment. Thus, without the keystone species the ecosystem it involves would collapse. We referred to resources such as the <a href="https://www.nationalgeographic.org/encyclopedia/keystone-species/">National Geographic</a> website to better understand the concept of keystone species and what makes this domain space important.</p>
+		<div class="img-container">
+			<img src="images/feeding-frenzy/otters.jpg" alt="the biome of kelp, otters, and urchins">
+		</div>
+		<p>For example, in the kelp biome, the otter acts as a keystone species by preying on sea urchins. Without the otter, the urchin population would eat all the kelp and overpopulate, eradicating the kelp forests and the diversity of fish and other species that live in it. Human effects on keystone species such as hunting otters and climate change has led to the destruction of these kelp forests in the seas off of eastern Australia and Tasmania to northern California.</p>
+
+		<h4><a name="domain_space"></a>Validation of Domain Space</h4>
+		<p>Through interviews with random students on campus and our peers, we found that most undergrads understand that organisms interact via the food web, but many have not heard of the concept of keystone species - which provided some initial validity for our educational goal (we conducted interviews with a University of Pittsburgh professor of ecology later on).</p>
+
+
+		<h3><a name="learning_goals"></a>Learning Goals</h3>
+		<p>We thus defined specific learning goals for our game, initially named Kelp-Needed, before entering our first round of prototyping/playtesting:</p>
+		<ol>
+			<li>Players should be able to identify the role of keystone species in a specific ecosystem; we decided to use the kelp ecosystem as a model for our initial prototype.</li>
+			<li>Players should be able to understand the importance of the keystone species: removal of it will collapse the entire ecosystem, actions of one species affects others in ecosystem.</li>
+			<li>As a higher-level secondary goal, players should understand the impact of human activities on the ecosystem and balance of species interplay especially with respect to the keystone species.</li>
+		</ol> 
+
+		<h3><a name="aesthetic_goals"></a>Aesthetic/Experience Goals</h3>
+		<p>We envisioned and formalized how we want players to feel and experience our game: our aesthetic goals. With integration of MDA with educational objectives in mind, we defined our aesthetic goals to be Expression, Narrative, and Fellowship. Our aesthetic experience would depend on the approach we took with mechanics; we could promote personal expression through competition and strategy, or fellowship with others as they play for a common goal. With our "human impact" learning goal in mind, we also envisioned players feeling emotionally invested in the well-being of the ecosystem that we may present in the game context. </p>
+
+		<h3><a name="mechanics_ideation"></a>Ideation for Core Game Mechanics</h3>
+		<p>We decided to use the kelp biome as an example to guide our initial prototypes. Through further brainstorming sessions, we came up with ideas for core or partial game mechanics with the three components of the EDGE framework in mind - integrating educational goals, learning science principles, and MDA in various degrees.</p>
+		<p>Some of our ideas and thoughts included:</p>
+		<ol>
+			<li>Players do body motions/movements to signal their actions to other players</li>
+			<li>Physical item-based; ex. straws to represent kelp, colored stones to represent fish, etc. and players have to grab as many as possible</li>
+			<li>Card game like Hanabi where players don’t know their own cards and have to help each other understand what cards to use/not use</li>
+			<li>Incorporating events into our game like human activities (Ex: “Humans overfish the kelp ecosystem and the entire fish population is reduced to 2” or Ex: “A disease strikes the kelp forest and all kelp population is decreased by 4”, etc.)</li>
+			<li>Numbers-based mechanic with the conventional playing card deck (1-10, AKQJ) and have the players balance the ratio between populations; this would also help determine the mechanic of what “success” means in our game</li>
+			<li>Something like Pokemon cards where species have a “Population HP”, “Ability”, and “Moveset”: This idea could make things more interesting but definitely would take more work and consideration for the player interactions.</li>
+		</ol>
+		<p>We decided to move forward with two primary approaches/options for prototyping the core game mechanic:</p>
+		<ol>
+			<li>In the first, we can have each player represent a species (otter, urchin, kelp, fish, etc.) with each species having a specific set of abilities.</li>
+			<li>In the second, each player has multiple species in their hand. There are species cards and event cards; players work together and can receive any of the cards. Players can not see each other's cards but must work together to preserve the environment based on conditions drawn from the event deck.</li>
+		</ol>
+		<p>We set out to prototype and playtest in order to figure out how much, and which aspects of each approach would be better for playability, for achieving our learning goals, and make for an engaging experience.</p>
+
+		<!--<p>I was in charge of creating prototype 1 and playtesting it based on the first approach, and my partner was in charge of creating and testing prototype 2 based on approach 2. </p>-->
+
+		<h3 id="#prototype_1">Prototype #1</h3>
+		<p>We went about designing the specific game mechanics of this idea by considering the potential player scenarios I would hope to achieve (translating from our aesthetic/experience goals), our educational goals, and referring to sources on the ecosystem of kelp forests with otters as the primary keystone species.</p>
+		<p>Our "why" for creating this prototype was to see if the idea of a game where players simulate a representation of a true ecosystem could lead to learning, provide an immersive experience that allows for Expression and Fellowship, and increase interest in the impact of human activities on ecology.</p>
+		<div class="img-container">
+			<img src="images/feeding-frenzy/proto1.jpg" alt="prototype one">
+		</div>
+		
+		<p>We created a multiplayer game where multiple players could represent either otters or urchins to start, thus forming teams or allowing for a two-player game. I left out fish and kelp as species that players could represent. While kelp has an important role, a player representing it would not be able to prey on other animals or have much influence through strategy, and fish only have a minor role in that they depend on kelp forests as shelter. Kelp was left as a constant player, such that it would replicate at a constant rate in the game environment. We reasoned that the roles of fish and kelp could be expanded into player roles after testing the core component of otter and urchin actions, or we can use a broader ecological biome for the next iterations if this approach has potential.</p>
+
+		<h4>Player Abilities as a Species</h4>
+		<p>A players’ available options is to add a new species card to the “environment”, feed an animal in the environment (of their own species), pick up an event card, or no action. Each event hard represents a change the state of the environment by dividing or adding to the number of kelp or otters that are active in the environment, whether it is caused by human activities or natural causes.</p>
+
+		<h4>Death and Reproduction Rates</h4>
+		<p>To simulate death rates, after all players have gone twice (two rounds), animals that are empty or haven’t eaten are removed from the environment and the number of kelp in the environment increases twofold. Since active otters prey on urchins, urchins would need to replicate faster than otters in order to avoid dying out too early on in the game. We aimed to disproportionately control the reproduction rates of species in the game by requiring otter pieces to eat two urchin pieces to add a new otter card to the environment, while urchins only eat one kelp to add a new urchin to the environment - this was so that urchins would reproduce quickly as they are eaten by otters.</p>
+
+		<h4>Next Steps</h4>
+		<p>We hoped that through play, players learn about the impact of each player’s action on the ecosystem and the abundance of their own species. However, it was still unclear which was the best way to determine the end state of the game, as these rules would shape player behavior. We considered many different options, such as when players run out of species cards in their “hand”. Another could be when the ecosystem collapses and only one species is left. We decided to simply playtest with the core mechanic (player’s roles as species with abilities) to see how that plays out, and to provide further insight into how to determine the end state of the game.</p>
+
+		<h3 id="#playtest_1">Playtest with Prototype #1</h3>
+		<p>We tested prototype 1 with four CMU undergraduates. The purpose of the playtest was to gain insight into how much learning is likely to occur, see what decisions players make and how motivated they are, and potential insights for the best way to determine the end state of the game.</p>
+ 
+		<div class="img-container">
+			<img src="images/feeding-frenzy/proto1-test.jpg" alt="prototype one playtest">
+		</div>
+		
+		<h4>Instructions</h4>
+		<p>Players were told that their goal is to maintain their own species' survival, and to play for several rounds (an arbitrary end state for mechanic playtesting purposes). Each player can place 1 animal card of their species in the "environment" (public domain space on the table) in the initial round to begin. Players were also told that their possible actions were: no action, feed (on kelp if urchin, feed on urchin if otter), or pick up an event card. They were also informed of the rules regarding death and reproduction: urchins eat once to replicate and otters eat twice to replicate, existing kelp doubles after each round, and unfed otters and urchins die after each round.</p>
+
+		<h4>Insights</h4>
+		<p>The prototype was playtested twice, with two players being urchins and two being otters. We gained valuable insights from observation and a post-playtest feedback session:</p>
+		<ol>
+			<li>Both playtests ended when urchins died out before otters only after several rounds. This points to incorrect content learning about keystone species, but still shows some understanding of trophic interactions/food web</li>
+			<li>Players remarked (at the end of the session) that urchins were important, instead of emphasizing the importance of the keystone species - the otter - in maintaining the population of kelp.</li>
+			<li>Player experience felt limiting; players expressed disappointment in small range of species actions/abilities. One remarked "I feel like any action I take leads to the destruction of the ecology"</li>
+			<li>Some players wanted event cards that affect urchin populations. (Originally we thought this would be unrealistic or ineffective for learning about keystone species, but it would make for a more interesting game.</li>
+			<li>Logistical issue: replicated urchins are empty/have not fed, so they "die" too soon based on the rule --> has a backfiring effect on the player who should be rewarded; need to tweak rates of death/reproduction and timing.</li>
+			<li>Players found the event cards the most interesting and important aspect of the game, and expected the game to be more centered around the human impact issue.</li>
+			<li>One player remarked that this game was an "inaccurate representation" of growth and death rates of kelp.</li>
+		</ol>
+
+		<p>It seemed that by acting out as species and observing the impact on the virtual ecosystem, players came to understand the general connectedness of kelp, otters, and urchins, but the significance of the keystone species (the otter) on the ecosystem as a whole seemed to be lost.</p>
+
+		<p>We found that a semi-simulatory game based on the species in the kelp biome (or any real ecosystem model) did not make for an interesting game. Depending on the types of player actions/species abilities we allow, the representation would either be innaccurate and lead to incorrect content learning or make for a limiting experience with predetermined components.</p>
+
+		<h3 id="#prototype_2">Prototype #2</h3>
+		<p>In this prototype, we had players work together given a hand of different species cards. Players can only  they can only look at themselves. Players need to make decisions and consider tradeoffs depending on which species eats what. My partner described the mechanics as mixed species distribution and counting; she used a more vague and exploratory approach throughout prototyping/playtesting.</p>
+		<div class="img-container">
+			<img src="images/feeding-frenzy/proto2.jpg" alt="prototype two">
+		</div>
+		
+		<h3 id="#playtest_2">Playtest with Prototype #2</h3>
+		<p>We tested prototype 2 with CMU undergraduates. Each player was distributed a hand of mixed species cards, and players had to place species cards, one by one, in the correct order to construct an ecosystem, thus forcing players to work together.</p>
+
+		<div class="img-container">
+			<img src="images/feeding-frenzy/proto2-test.jpg" alt="prototype two playtest">
+		</div>
+		
+		<h4>Insights/Feedback</h4>
+		<ol>
+			<li>Having multiple species cards that eat the same thing (i.e., urchins, crustaceans, and snails all eat kelp) made for more interesting dynamics.</li>
+			<li>Players wanted a game that you only need to play once in order to understand the balance that needs to be maintained.</li>
+			<li>Players found no incentive to have all the cards in their hand, since there's no individual incentive to "win".</li>
+			<li>Players liked how there was a visual component to learn how interconnected things are when placing down species cards next to each other; the experience becomes more like scrabble or a board game.</li>
+		</ol>
+		<p>Overall, the Fellowship component we aimed for in this prototype by having players work together to construct the ecosystem led to a less interesting player experience. It was clear that we would need to increase competition and individual incentives to make for a more engaging playing and learning experience.</p>
+
+		<p>We found that approach 1 - where players represent species, would not work; there were many issues with simulating/representing the dynamics of a true ecosystem model. The concept of players learning by constructing a model of an ecosystem in approach 2 showed more promise, and we ideated new game mechanics for our next prototypes - which ultimately became the basis of our final game.</p>
+
+		<p>We realized the need to broaden our educational domain/ learning goals to target deeper learning of trophic interactions and food web relationships. Learning about this connectivity was of fundamental importance, which would then entail understanding of why keystone species are important.</p>
+
+		<h4 id="#expert_interview">Interview with Expert</h4>
+		<p>We spoke to Dr. Patrick Douglas Shirley from the University of Pittsburgh, an expert in ecology. He gave us feedback on our progress as well as some insight on how to develop and frame our learning goals. Through our interview and discussion, we learned that experts and scientists understand how food webs work in nature by piecing together information from observations about a particular species. In addition, the field of ecology has a lot of overlap and many parts that we can teach, but he was more concerned about the game experience. Particularly, an effective game about ecology could be less accurate, but should be more engaging and fun for players. Experts such as himself are more concerned with getting people to understand how humans impact the delicate balance of the food web; the most powerful way for people to understand this is by seeing the before and after state of the ecosystem before and after human activities.</p>
+
+		<h4 id="#revisited_goal_1">Refined Learning Goals</h4>
+		<p>With these expert insights as well as those from our playtests, we redefined our learning goals to be about the food web in general, which would encapsulate the idea of keystone species without forcing the term. Players should be able to:</p>
+		<ul>
+			<li>Identify and understand the feeding relationships between trophic levels (primary producer, primary consumer, secondary consumer, tertiary consumer, apex predator)</li>
+			<li>Understand how human activities negatively impact a species, thereby indirectly affecting other species</li>
+		</ul>
+        
+        <h4 id="#prototype_3">Prototype #3</h4>
+		<p>We developed the idea of players claiming "paths" between species representing the feeding relationships between them, thereby piecing an ecosystem together while competing to claim as many connections as possible.</p>
+
+		<div class="img-container">
+			<img src="images/feeding-frenzy/proto3.jpg" alt="prototype three">
+		</div>
+		
+		<p>We had players place down foam pieces on a board with names of animals (with pre-drawn paths) to claim connections between different fake species, with the same amount of pieces necessary to claim every link. They would decide on these relationships as they pick up and read the information on the "species cards", which contained clues/asymmetrical information to what species eats what.</p>
+
+		<h4 id="#playtest_3">Playtest with Prototype 3</h4>
+		<p>We playtested this prototype with two CMU undergraduates with the following rules:</p>
+		<ul>
+			<li>Takes 3 pieces to connect two species together</li>
+			<li>Turn consists of either placing a piece down to form links OR drawing a card from the species deck</li>
+			<li>Once a correct link is made, the card that describes what that species eats must be placed face-up on the table for all players to see</li>
+			<li>If a species card has more than one thing it eats, it MUST be placed on the table once any ONE of its links is made </li>
+			<li>A player “claims” a link if they have the majority of pieces creating the link (2 out of the 3 pieces belong to Player A then that link is claimed by Player A) </li>
+			<li>Winner is determined by who claims the greatest number of links </li>
+		</ul>
+		<p>We found that we needed to refine some aspects of the game mechanics, such as better organization with the placement of paths between animal labels on the board to avoid clashing, and to limit the number of species cards that a player can have in their hand at one time. We recieved positive feedback about the game experience in general, and the asymmetrical information on the species cards made gameplay more interesting.</p>
+
+		<h4 id="#prototype_4">Iteration/Prototype #4</h4>
+		<p>For our next iteration, we decided to add the visual aspect of possible links while still offering some way to organize the disorganization of placing marks on the board.</p>
+
+		<div class="img-container">
+			<img src="images/feeding-frenzy/iteration4.jpg" alt="notes for our fourth iteration">
+		</div>
+
+		<div class="img-container">
+			<img src="images/feeding-frenzy/proto4-1.jpg" alt="our prototype 4 part 1">
+		</div>
+		
+		<p>In addition, we decided to incorporate our expert insights further. We decided to simplify the logistics of trying to organize a real food web on the board by using fake species, and added a human element by creating "Human Impact" cards, to be used in our new phase 2 of the game- the "after" state. In addition, we indicated the trophic level of species on the board such that we can describe feeding relationships in these terms on certain species cards.</p>
+
+		<div class="img-container">
+			<img src="images/feeding-frenzy/proto4-2.jpg" alt="prototype 4 part 2">
+		</div>
+		
+		<p>In part 2 of the game, a player is required to pick up a card from the human impact deck, which includes some information on a human activity and which species is negatively affected by it (representing its extinction). Each player took turns removing the links that connected to the affected species, and those connected to the subsequently affected species. The player who had initially claimed affected links in part 1 would lose those points; the player with the most remaining links would win the game.</p>
+
+		<h4 id="#playtest_4">Playtest with Prototype 4</h4>
+		<p>In our playtest, we had players compete to construct the food web in "part 1" using the clues from the species cards in their hand and those that have been placed down for all players to see.</p>
+		<p>We found that having some species eat multiple animals, or having some cards describe species in terms of trophic level (that are eaten) made for more interesting dynamics. We observed some fellowship and competition, as well as emotional engagement of the human impact component of part 2.</p>
+		<p>Overall, players understood the meaning behind the rippling effect of the chosen human impact card in part 2 on their efforts in constructing the ecosystem in part 1.</p>
+
+		<h4 id="#prototype_5">Iteration/Prototype 5</h4>
+		<p>While we successfully achieved the emotional effect of the "before-and-after" state of the ecosystem in our game setting, we needed to refine some aspects in our iteration.</p>
+		<p>We used transparency sheets in our prototype instead of foam pieces, so that players can use markers to draw links in part 1 and easily erase their links in part 2. We included a formal Scorecard sheet and higher fidelity cards.</p>
+
+		<div class="img-container">
+			<img src="images/feeding-frenzy/scorecard.jpg" alt="our formal scorecard design">
+		</div>
+		
+		<section id="final_expo">
+			<h4 id="#final_expo">Final Expo/ Feedback</h4>
+			<div class="img-container">
+				<img src="images/feeding-frenzy/expo-2.jpg" alt="our final game expo presentation">
+			</div>
+			<p>We brought our prototype to the final game expo for the course, and playtested our game with HCII faculty and other classmates.</p>
+			<p>We recieved positive feedback from the faculty of the CMU Human-Computer Interaction Institute, particularly in how we elicited emotion by having players compete and work to construct the web in part 1, and then have them see it crumble in part 2.</p>
+		</section>
+
+		<h4 id="#final_prototype">Final Design</h4>
+		<p>For our final iteration, we improved upon the visual component of our species card deck, our board, and our human impact cards.</p>
+
+		<div class="img-container">
+			<img src="images/feeding-frenzy/board-final.jpg" alt="our final polished game board">
+		</div>
+
+		<div class="img-container">
+			<img src="images/feeding-frenzy/speciescards-final.jpg" alt="our final polished species cards">
+		</div>
+
+		<div class="img-container">
+			<img src="images/feeding-frenzy/human-final.jpg" alt="our final polished human impact cards">
+		</div>
+		
+		<h4 id="#evaluation">Evaluation of Our Game</h4>
+		<p>For our evaluation, we referenced primarily the “Theoretical Evaluations” as well as “Anecdata” from the “Spectrum of Evaluations” reading for educational game design. Insights gathered include:</p>
+		<ul>
+			<li>Self-Reflection: We think that our game is able to make players feel invested in the Part 1 of the game where they have to discover, piece together, and compete against each other to claim valid links of the food web which is all shattered in Part 2 with the point deductions from the Human Impact Cards.</li>
+			<li> Theoretical Justification: We believe that particularly the MDA aspect of the EDGE Framework is supported in our game because we utilize fictional species with fictional links which means that it is novel situation for players to have to piece together the ecosystem. In addition, they have to work both against and with each other due to the asymmetric information offered by the cards of the Species Deck and having the declare the species and its trophic level in order to claim links reinforces learning of ecological terminology.</li>
+			<li>Expert Evaluation: We had our expert, Dr. Shirey, look at our final prototype after the presentation and received both constructive feedback and validation of our game and its learning goals. We also had game design faculty during the Expo give us valuable feedback and praise for the emotions that our game has potential to elicit due to the gameplay in Part 2</li>
+			<li>Anecdata: During playtests players were able to see that the human impact cards, while only mentioning impacting one species, actually affected the entire food web of species. Students were then able to discuss amongst each other the effects of what happens to species due to human activities like pollution and deforestation and also feel the loss (due to their point deductions) of the links between species and the destruction of the web.</li>
+		</ul>
+    	</div>
+
+
+    </main>
+
+	<footer>
+		<span id="backtotop"><a href="#top">Back to top</a></span>
+	    <ul id="footerlist">
+	    	<li class="footerelem"><a href="https://www.linkedin.com/in/haeunb123/">LinkedIn</a></li>
+		    <li class="footerelem"><a href="about.html">About</a></li>
+	    	<li class="footerelem"><a href="https://medium.com/@hollyzzz">Medium</a></li>
+		    <li class="footerelem"><a href="mailto:haeunb123@gmail.com">Contact</a></li>
+		    <li>Cell: 347-882-2447</li>
+	    </ul>
+	</footer>
+
+	<script src="scripts/main.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
