@@ -65,7 +65,7 @@ a {
 }
 
 .navitem, .hollyitem, .footerelem a, a:link {
-  color: #666;
+  color: #000;
   text-decoration: none;
 }
 
@@ -75,7 +75,8 @@ a {
 }
 
 .navitem, .hollyitem, .footerelem a, a:hover {
-  color: #666;
+  color: #5499C7;
+  font-weight: bolder;
   text-decoration: none;
 }
 
