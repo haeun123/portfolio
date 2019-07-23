@@ -15,12 +15,37 @@
 		    <li class="navitem"><a href="art.html">Artwork</a></li>
 		  	<li class="navitem"><a href="about.html">About</a></li>	
 	   	</ul>
-    </nav>	
+    </nav>
+
+    <div class="sidenav">
+        <a href="#overview">Overview</a>
+        <button class="dropdown-btn"> 
+            <i class="fa fa-caret-down no-italics">Research</i>
+        </button>
+        <div class="dropdown-container">
+            <a href="#comp-analysis">Competitive Analysis</a>
+            <a href="#interviews">Interviews</a>
+            <a href="#additional-research">Secondary Research</a>
+        </div>
+        <a href="#customer-journey">Customer Journey Map</a>
+        <a href="#personas">Personas</a>
+        <a href="#scenarios">Scenarios</a>
+        <a href="#prioritized-features">Prioritized Features</a>
+        <a href="#brainstorming">Brainstorming</a>
+        <a href="#wireframes">Wireframes</a>
+        <a href="#flowchart">Flowchart</a>
+        <a href="#proto-test">Prototyping/ User Testing</a>
+        <a href="#UX-UI-audit">UX and UI audit</a>
+        <a href="#moodboard">Moodboard</a>
+        <a href="#stylesheet">Stylesheet</a>
+        <a href="#refined-screens">Refinement</a>
+        <a href="#final-demo">Final Demo</a>
+    </div>
 
     <main class="casestudy-container">
     	<div class="casestudy-content">
     	
-    	<h1>SHFIT App</h1>
+    	<h1><a name="overview"></a>SHFIT App</h1>
         <p>While flexibility in scheduling and work hours is growing more popular in the workspace, swapping shifts amongst employees can be a disorganized process. The Shfit app addresses the issues of matching skill level, communication, and confusion in scheduling and exchanging shifts amongst gym employees by streamlining shift swapping, scheduling, and communication amongst employees and managers in one virtual space.</p>
 
     	<h2>Introduction</h2>
@@ -35,7 +60,7 @@
         <h3>Timeline</h3>
         <p>10/24/2018 - 12/05/2018</p>
 
-    	<h2>Research and Competitive Analysis</h2>
+    	<h2><a name="comp-analysis"></a>Research and Competitive Analysis</h2>
 
     	<h3>Competitive Analysis</h3>
         <p>We looked at several top competitors for existing shift swapping applications, as well as the discussion and research insights surrounding their effectiveness and how well these app's features fit into the business context. We aimed to understand the existing issues around shift swapping and schedule instability, and how the features of these competititor applications have aimed to address these issues.</p>
@@ -83,7 +108,7 @@
 
         <p>Increasing communication around scheduling was important, as well as accountability. Some of these apps have implemented a "social media" aspect into their applications successfully. It is important that managers have the option to approve shifts, after employees have been able to easily navigate shift swapping amongst themselves on a single platform. However, within shift swapping it seemed critical to address the issue of variable training/skill level amongst employees - a key issue that further affects customers and business needs.</p>
 
-    	<h3>Interviews</h3>
+    	<h3><a name="interviews"></a>Interviews</h3>
         <p>My teammates conducted interviews with former and current gym workers (of other gyms and at Carnegie Mellon University), and I interviewed an owner of a franchise. Our purpose was to better understand the experiences of employees and managers around exchanging shifts in the workplace</p>
 
         <h4>Justin: 24, former trainer at a gym</h4>
@@ -107,7 +132,7 @@
             <li>Lifeguards at the pool use SubItUp to schedule and substitute shifts.</li>
         </ul>
 
-    	<h3>Additional Research</h3>
+    	<h3><a name="additional-research"></a>Additional Research</h3>
         <p>We conducted further secondary research to discover common employee scheduling problems and potential solutions.
         <ul>
             <li>Communication, verification, and organization is key to resolve shift swapping confusion and no-shows</li>
@@ -123,13 +148,13 @@
         </ul>
 
     <!-- END OF CONTEXTUAL RESEARCH -->
-    	<h2>Customer Journey Map</h2>
+    	<h2><a name="customer-journey"></a>Customer Journey Map</h2>
         <div id="journey-container" class="img-container">
             <img id="journey1" src="images/shfit/Journey Map.jpg">
             <img id="journey2" src="images/shfit/Journey Map2.jpg">
         </div>
 
-    	<h2>Personas</h2>
+    	<h2><a name="personas"></a>Personas</h2>
         <p>I was responsible for creating Todd Peterson's persona, based on the interview I conducted with an owner and other research.</p>
 
         <h3>Jocelyn Goforth</h3>
@@ -175,8 +200,8 @@
         <p>Joseph wishes that there were a systemized and streamlined procedure incorporated into the pharmacy at work to better track and communicate these shift swapping requests. A few of the things that he would appreciate are efficiency and automaticity, as well as more noticeable and responsive notifications for quick and seamless conversion rates for shift handling scenarios. He also imagines that it would be useful to be able to request swaps from multiple people or have automatic suggestion and handling of other people’s shifts that are suggested for trade rather than deciding each eligible timeblock manually. </p>
 
     <!-- Scenarios---------->
+    	<h2><a name="scenarios"></a>Scenarios</h2>
         <p>Based on these customer journeys and personas, we created four scenarios to encapsulate the issues that employees and managers may face in scheduling / shift swapping, and how our proposed application may resolve these.</p>
-    	<h2>Scenarios</h2>
         <ol>
             <li>[Jocelyn Goforth] Jocelyn is often in a hurry and constantly forgets when her shift is coming up for lifeguarding. Navigating to the website to look up or sign up for her shift is a hassle, since she’s always on the move and typing/looking at her phone is never convenient. The interface is also extremely bland- making options and tasks hard to find. Thus, Jocelyn constantly sleeps through her shifts because she’s never well informed on when they are. However, with a new and improved app, Jocelyn will have push reminders before her shift starts. The interface will also be adjusted so it flows in a logical manner and different operations are easier to find.</li>
             <li>[Matt Terrell] Matt has a client that requested to reschedule their training session for a different timeblock than originally planned; the new, preferred schedule overlaps Matt’s shift for spotting the weight room, so he toggles his slot in the team calendar on the app to open it for availability and set his status as requesting a swap, and toggles his coworkers’ blocks that work for him. Because of the necessary skill and experience level for handling weights, he pins a required skill level in the description modal of his time block such that only eligible coworkers can request a swap. When his coworkers see his alerted slot on the team calendar, they will be able to offer a swap with a block that Matt had prerequested, and then send a notification to his device.</li>
@@ -184,7 +209,7 @@
             <li>Susie can only work half of her shifts tomorrow because she needs to take one hour off. She hopes that someone from the following shift will come in a bit early to cover the second half of her shift. Susie finds it difficult to split a shift in two in the app settings and has to contact other coworkers via phone/email. To solve the problem, our APP provides Split Shift feature, which allows people to split their shifts and swap or drop the shift that has been split.</li>
         </ol>
 
-    	<h2>Prioritized Features List</h2>
+    	<h2><a name="prioritized-features"></a>Prioritized Features List</h2>
         <p>We created a list of prioritized features based on careful study of existing applications and UI trends.</p>
         <p>Key Features:</p>
         <ul>
@@ -200,7 +225,7 @@
             <li>Mass messaging to all employees</li>
         </ul>
 
-    	<h2>Brainstorming</h2>
+    	<h2><a name="brainstorming"></a>Brainstorming</h2>
         <p>As a team, we brainstormed with these key features and common issues we discovered with our research in mind to draft wireframes and develop the user experience.</p>
         <div id="brainstorm-container" class="img-container">
             <img src="images/shfit/brainstorm1.jpg">
@@ -208,7 +233,7 @@
         </div>
         <p>Our app would have an admin and employee side such that shift swap requests would be notified to the manager for approval (pending approval notification), as well as to the employee whose shift would be taken over. We would include a month/week/daily calendar for regular employee scheduling and checking (increasing accountability amongst employees), and promote communication through the group and individual chatting feature. In addition, a dashboard with summaries with a half screen feature would allow the user to see his/her daily responsibilities and calendar through a half-screen feature that may possibly swap/scroll up. Through the directory, employees would easily find employees, see their training and skill level and contact them immediately through the messaging features. All features should be easily accessible through a toolbar and interconnected in an intuitive way, which we drafted through our wireframe sketches/flow.</p>
 
-    	<h2>Wireframes</h2>
+    	<h2><a name="wireframes"></a>Wireframes</h2>
         <p>I took responsibility over creating wireframes for the admin side, pending approvals, calendar, and messaging/chatting.</p>
         <div class="img-container">
             <img src="images/shfit/wire1.png">
@@ -218,13 +243,13 @@
             <img src="images/shfit/wire5.png">
         </div>
 
-        <h3>Flowchart</h3>
+        <h3><a name="flowchart"></a>Flowchart</h3>
         <p>I put our wireframes into a single flowchart demonstrating how users would navigate our app to complete certain tasks such as messaging others, checking notifications, swapping shifts, and scheduling their workweek in advance.</p>
         <div class="img-container">
             <img src="images/shfit/Flowchart.jpg">
         </div>
         
-    	<h2>Prototype and Testing</h2>
+    	<h2><a name="proto-test"></a>Prototype and Testing</h2>
         <p>We created a lo-fi prototype with our wireframes using InVision and tested Hanyu (user 1) and Stephanie (user 2), two students at CMU. We asked them to complete certain tasks that an employee or admin may want to do using the prototype.</p>
 
         <p>These were our prompts for our user tests:</p>
@@ -245,7 +270,7 @@
         </ul>
         <p>Based on our user tests, we found that overall our system/flow was intuitive, yet we needed to better distinguish between scheduling and checking existing schedules on the calendar as well as improving the flow between chatting, notifications, and inbox. </p>
 
-    	<h2>UX and UI Design Audit</h2>
+    	<h2><a name="UX-UI-audit"></a>UX and UI Design Audit</h2>
         <p>We looked at existing applications including the calendar feature on iOS, Yelp, Venmo, Webtoons, and Facebook Events to complete a UX and UI design audit:</p>
         <div class="img-container">
             <img src="images/shfit/calendar-audit.png">
@@ -255,31 +280,31 @@
             <img src="images/shfit/facebookevents-audit.png">
         </div>
 
-    	<h2>Mood Board</h2>
+    	<h2><a name="moodboard"></a>Mood Board</h2>
         <p>We worked together to come up with ideas for our moodboard and the aesthetic feel/quality that we wanted our app's UI to evoke. Our teammate created the moodboard and style guide based on our consensus.</p>
         <div class="img-container">
             <img src="images/shfit/moodboard.png">
         </div>
 
-    	<h2>Style Sheet</h2>
+    	<h2><a name="stylesheet"></a>Style Sheet</h2>
         <div class="img-container">
             <img src="images/shfit/styleguide.png">
         </div>
         
-    	<h2>Visual/Screen Design Iterations</h2>
+    	<h2><a name="refined-screens"></a>Visual/Screen Design Iterations</h2>
         <p>For our refined screens, we improved the flow between scheduling and viewing schedules, messaging, notifications, and chatting, and the dashboard. We divided up screens amongst each other to add color and type to improve the visual quality of the screens.</p>
 
-        <h3>First Iteration</h3>
+        <h3><a name="refined-1"></a>First Iteration</h3>
         <div class="img-container">
             <img src="images/shfit/refined1.png">
         </div>
 
-        <h3>Second Iteration/ Refined Visuals</h3>
+        <h3><a name="refined-2"></a>Second Iteration/ Refined Visuals</h3>
         <div class="img-container">
             <img src="images/shfit/refined2.png">
         </div>
 
-    	<h2>Final Demo</h2>
+    	<h2><a name="final-demo"></a>Final Demo</h2>
         <a href="https://invis.io/XFPAUVXJ5P6" target="_blank"><h4>Click here for the InVision prototype</h4></a>
 
     	<h2>Final Presentation</h2>
@@ -297,5 +322,6 @@
             <li class="footerelem">Cell: 347-882-2447</li>
 	    </ul>
 	</footer>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
