@@ -1,3 +1,4 @@
+
 html, body {
   margin: 0;
   padding: 0;
@@ -6,9 +7,20 @@ html, body {
   font-style: none;
   font: inherit;
   vertical-align: baseline;
-  font-family: 'Open Sans', "Helvetica";
-  color: #000000;
+  color: #424242;
   overflow-x: hidden;
+  font-family: proxima-nova, sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+p, span, a, li {
+}
+
+.sidenav {
+  
 }
 
 #proto_playtest {
@@ -34,7 +46,7 @@ a {
   text-align: left;
   display: inline-block;
   max-width: 800px;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-top: 50px;
   margin-bottom: 40px;
 }
@@ -65,23 +77,22 @@ a {
 }
 
 .navitem, .hollyitem, .footerelem a, a:link {
-  color: #000;
+  color: #424242;
   text-decoration: none;
 }
 
 .navitem, .hollyitem .footerelem a, a:visited {
-  color: #000;
+  color: #424242;
   text-decoration: none;
 }
 
 .navitem, .hollyitem, .footerelem a, a:hover {
   color: #5499C7;
-  font-weight: bolder;
   text-decoration: none;
 }
 
 .navitem, .hollyitem, .footerelem a, a:active {
-    color: #000;
+    color: #424242;
     text-decoration: none;
 }
 
@@ -165,14 +176,25 @@ main {
 
 #work {
   text-align: center;
+  margin-top: 20px;
 }
 
 .case-container {
   display: inline-block;
-  max-width: 1000px;
-  text-align: left;
-  padding: 35px;
-  max-height: 250px;
+  width: 40%;
+  overflow: hidden;
+  vertical-align: top;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
+.case-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  vertical-align: top;
 }
 
 /* for individual case study pages */
@@ -245,7 +267,7 @@ footer {
   height: 200px;
   text-align: center;
   padding: 20px;
-  color: #000;
+  color: #424242;
   margin-top: 100px;
   background-color: #f7f7f7;
 }
