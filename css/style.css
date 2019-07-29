@@ -199,7 +199,7 @@ footer p {
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
   body {
-    font-size: 15px;
+    font-size: 100%;
   }
   .sidenav {
     display: none;
@@ -220,7 +220,7 @@ footer p {
 /* Tablet Styles */
 @media only screen and (min-width: 600px) {
   body {
-    font-size: 1.2rem;
+    font-size: 1.2em;
   }
   .case-container {
     display: inline-block;
@@ -283,6 +283,12 @@ footer p {
 }
 
 @media only screen and (min-width: 991px) {
+
+  .casestudy-content {
+    position: relative;
+    left: 60px;
+    width: 75%;
+  }
 
 /* Fixed sidenav, full height */
   .sidenav {
