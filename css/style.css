@@ -203,11 +203,23 @@ footer p {
   .sidenav {
     display: none;
   }
+  .casestudy-container {
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
+  width: 100%;
+  }
+
+ .casestudy-content {
+  display: inline-block;
+  text-align: left;
+  }
 }
 
 /* Tablet Styles */
 @media only screen and (min-width: 600px) {
   body {
+    font-size: 1.2rem;
   }
   .case-container {
     display: inline-block;
@@ -222,11 +234,23 @@ footer p {
   .sidenav {
   display: none;
 }
+.casestudy-container {
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.casestudy-content {
+  width: 100%;
+  display: inline-block;
+  text-align: left;
+}
 }
 
 /* Desktop Styles */
 @media only screen and (min-width: 768px) {
   body {
+    font-size: 1rem;
   }
   /******** Side Navigation **************/
   .no-italics {
