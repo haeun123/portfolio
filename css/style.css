@@ -1,9 +1,9 @@
+/* Universal Styles */
 
 html, body {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 1.5rem;
   font-style: none;
   font: inherit;
   vertical-align: baseline;
@@ -12,19 +12,12 @@ html, body {
   font-family: proxima-nova, sans-serif;
 }
 
-h1 {
-  font-weight: 700;
-}
-
-p, span, a, li {
-}
-
-.sidenav {
-  
-}
-
 #proto_playtest {
   font-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 nav {
@@ -35,20 +28,41 @@ nav {
   z-index: 3;
 }
 
-a {
-  text-decoration: none;
+.sidenav {
+  display: none;
 }
+
+/* index html gallery */
+main {
+  z-index: 1;
+}
+
+#work {
+  width: 100%;
+  text-align: center;
+}
+
+.case-container {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  vertical-align: top;
+
+}
+
 #intro-container {
   text-align: center;
   display: block;
-}
-#intro-content {
-  text-align: left;
-  display: inline-block;
-  max-width: 800px;
-  font-size: 1.3rem;
   margin-top: 50px;
   margin-bottom: 40px;
+}
+
+#intro-content {
+  max-width: 80%;
+  text-align: left;
+  display: inline-block;
+  font-size: 1.3rem;
+  vertical-align: middle;
 }
 
 #hollylist {
@@ -96,113 +110,14 @@ a {
     text-decoration: none;
 }
 
-/******** Side Navigation **************/
-.no-italics {
-    font-style: normal;  
-    float: none; 
-}
-
-/* Fixed sidenav, full height */
-.sidenav {
-  height: 100%;
-  width: 200px;
-  position: fixed;
-  z-index: 2;
-  top: 0;
-  left: 0;
-  overflow-x: hidden;
-  padding-top: 80px;
-}
-
-/* Style the sidenav links and the dropdown button */
-.sidenav a, .dropdown-btn {
-  padding: 3px 5px 3px 16px;
-  text-decoration: none;
-  font-size: 1em;
-  display: block;
-  border: none;
-  background: none;
-  width:100%;
-  text-align: left;
-  cursor: pointer;
-  outline: none;
-}
-
-/* On mouse-over */
-.sidenav a:hover, .dropdown-btn:hover {
-  color: green;
-}
-
-i {
-  font-style: bold !important;
-}
-/* Main content */
-/*
-.main {
-/*  margin-left: 200px; /* Same as the width of the sidenav */
-/*  font-size: 20px; /* Increased text to enable scrolling */
-/*  padding: 0px 10px;
-} 
-*/
-
-/* Add an active class to the active dropdown button */
-.active {
-  font-style: bold;
-}
-
-/* Dropdown container (hidden by default). 
-Optional: add a lighter background color and some 
-left padding to change the design of the dropdown content */
-.dropdown-container {
-  display: none;
-  padding-left: 10px;
-  font-size: 0.8rem;
-}
-
-/* Optional: Style the caret down icon */
-.fa-caret-down {
-  padding-right: 8px;
-  font-style: none;
-}
-
-/***************************************/
-
-main {
-  z-index: 1;
-  padding-top: 50px;
-  padding-left: 25px;
-  padding-right: 25px;
-}
-
-#work {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.case-container {
-  display: inline-block;
-  width: 40%;
-  overflow: hidden;
-  vertical-align: top;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 12px;
-  margin-top: 12px;
-}
-
-.case-container img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  vertical-align: top;
-}
-
 /* for individual case study pages */
-.casestudy-container, #about_main {
+.casestudy-container {
   text-align: center;
+  padding: 10px;
+  margin-top: 30px;
 }
 
-.casestudy-content, #about_main_content {
+.casestudy-content {
   max-width: 800px;
   display: inline-block;
   text-align: left;
@@ -210,11 +125,8 @@ main {
 /* ****************************** */
 
 .img-container {
-  width: 100%;
   height: auto;
   overflow: hidden;
-  margin-top: 20px;
-  margin-bottom: 20px;
   display: block;
   text-align: center;
 }
@@ -225,6 +137,7 @@ main {
   display: inline-block;
 }
 
+/* specific image containers in case studies */
 #journey-container img{
   display: inline-block;
   max-width: 45%;
@@ -261,6 +174,7 @@ main {
   width: 100%;
 }
 
+/* * *   FOOTER STYLES   * * */
 
 footer {
   width: 100%;
@@ -277,6 +191,121 @@ footer {
   list-style-position: inside;
   list-style-type: none;
 }
-#backtotop {
+
+footer p {
+  max-width: 80%;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body {
+  }
+  .sidenav {
+    display: none;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 600px) {
+  body {
+  }
+  .case-container {
+    display: inline-block;
+    width: 45%;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 6px;
+    margin-top: 6px;
+  }
+  #intro-container {
+  }
+  .sidenav {
+  display: none;
+}
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 768px) {
+  body {
+  }
+  /******** Side Navigation **************/
+  .no-italics {
+      font-style: normal;  
+      float: none; 
+  }
+
+  .sidenav {
+    display: none;
+  }
+
+  .case-container {
+    display: inline-block;
+    width: 40%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+  }
+
+  #intro-content {
+  text-align: left;
+  display: inline-block;
+  max-width: 70%;
+  font-size: 1.3rem;
+  vertical-align: middle;
+}
+
+}
+
+@media only screen and (min-width: 991px) {
+
+/* Fixed sidenav, full height */
+  .sidenav {
+    display: inline-block;
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 80px;
+  }
+
+  /* Style the sidenav links and the dropdown button */
+  .sidenav a, .dropdown-btn {
+    padding: 3px 5px 3px 16px;
+    text-decoration: none;
+    font-size: 1em;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+
+  /* On mouse-over */
+  .sidenav a:hover, .dropdown-btn:hover {
+    color: green;
+  }
+
+  i {
+    font-style: bold !important;
+  }
+
+  /* Add an active class to the active dropdown button */
+  .active {
+    font-style: bold;
+  }
+
+  /* Dropdown container (hidden by default) */
+  .dropdown-container {
+    display: none;
+    background-color: #f7f7f7;
+    padding-left: 10px;
+    font-size: 0.8rem;
+  }
 }
 
