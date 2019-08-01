@@ -5,8 +5,10 @@ html, body {
   padding: 0;
   border: 0;
   font-style: none;
+
   font: inherit;
   vertical-align: baseline;
+  
   color: #424242;
   overflow-x: hidden;
   font-family: proxima-nova, sans-serif;
