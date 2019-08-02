@@ -17,3 +17,17 @@ for (i = 0; i < dropdown.length; i++) {
     }
   });
 }
+
+function yesno(thecheckbox, thelabel, thenav) {
+  var checkboxvar = document.getElementById("toggle");
+  var labelvar = document.getElementById("label-toggle");
+  var navvar = document.getElementById("nav");
+  if (checkboxvar.checked == false){
+    labelvar.innerHTML = "&#9776;";
+    navvar.style.backgroundColor = 'transparent';
+  }
+  else {
+    labelvar.innerHTML = "&#10005;";
+    navvar.style.backgroundColor = 'rgba(255, 255, 255, 0.9)';
+  }
+}

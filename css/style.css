@@ -5,10 +5,8 @@ html, body {
   padding: 0;
   border: 0;
   font-style: none;
-
   font: inherit;
   vertical-align: baseline;
-  
   color: #424242;
   overflow-x: hidden;
   font-family: proxima-nova, sans-serif;
@@ -21,12 +19,45 @@ html, body {
 a {
   text-decoration: none;
 }
-
-nav {
-  position: fixed;
-  margin: 0;
+label {
   display: block;
+  cursor: pointer;
+  margin: 0 40px 0 0;
+  font-size: 24px;
+  line-height: 70px;
+  width: 26px;
+  float: right;
+}
+
+.cross {
+  display: none;
+}
+#toggle {
+  display: none;
+}
+
+.menu {
+  display: none;
+  clear: right;
+  text-align: center;
   width: 100%;
+}
+
+.menu a {
+  display: block;
+  text-decoration: none;
+  color: gray;
+  margin: 0;
+  line-height: 40px;
+}
+
+#toggle:checked + .menu {
+  display: block; 
+} 
+
+.nav {
+  width: 100%;
+  position: fixed;
   z-index: 3;
 }
 
@@ -189,13 +220,20 @@ footer {
 }
 
 #footerlist {
+  width: 100%;
   text-align: left;
   list-style-position: inside;
   list-style-type: none;
 }
 
+#backtotop {
+  width:100%;
+  text-align: center;
+}
+
 footer p {
-  max-width: 80%;
+  width: 100%;
+  text-align: center;
 }
 
 /* Mobile Styles */
@@ -280,6 +318,35 @@ footer p {
   max-width: 70%;
   font-size: 1.3rem;
   vertical-align: middle;
+}
+  .nav {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    line-height: 70px; /* center everything vertically??*/
+  }
+
+  .menu {
+    float: right;
+    width: auto;
+    display: block;
+    margin: 0 30px 0 0; /*top right bottom left*/
+
+  }
+
+  .menu a {
+    display: inline-block;
+    margin: 0 10px; /*top&bottom, left&right*/
+    line-height: 70px; /*so that when both icons are hidden it will be centered up?? */
+  }
+
+  label {
+    display: none;
+  }
+
+  .cross {
+    display: none;
+  }
 }
 
 }
