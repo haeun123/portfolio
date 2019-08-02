@@ -4,7 +4,7 @@ html, body {
   margin: 0;
   padding: 0;
   border: 0;
-  font-style: none;
+  font-style: normal;
   font: inherit;
   vertical-align: baseline;
   color: #424242;
@@ -13,7 +13,7 @@ html, body {
 }
 
 #proto_playtest {
-  font-style: none;
+  font-style: normal;
 }
 
 a {
@@ -22,10 +22,9 @@ a {
 label {
   display: block;
   cursor: pointer;
-  margin: 0 40px 0 0;
-  font-size: 24px;
-  line-height: 70px;
-  width: 26px;
+  margin: 0 1rem 0 0;
+  font-size: 2rem;
+  line-height: 2.5em;
   float: right;
 }
 
@@ -41,14 +40,15 @@ label {
   clear: right;
   text-align: center;
   width: 100%;
+  padding-bottom: 15px;
 }
 
 .menu a {
   display: block;
   text-decoration: none;
-  color: gray;
   margin: 0;
-  line-height: 40px;
+  font-size: 1.3rem;
+  line-height: 2em;
 }
 
 #toggle:checked + .menu {
@@ -68,6 +68,7 @@ label {
 /* index html gallery */
 main {
   z-index: 1;
+  min-height: 400px;
 }
 
 #work {
@@ -115,30 +116,26 @@ main {
     padding-right: 30px;
 }
 
-.navitem, .hollyitem {
-  padding: 5px;
-  font-size: 1em;
-  text-decoration: none;
-  letter-spacing: 2px;
-  display: inline-block;
+.activePage {
+  font-weight: bold;
 }
 
-.navitem, .hollyitem, .footerelem a, a:link {
+.navitem, .footerelem a, a:link {
   color: #424242;
   text-decoration: none;
 }
 
-.navitem, .hollyitem .footerelem a, a:visited {
+.navitem, .footerelem a, a:visited {
   color: #424242;
   text-decoration: none;
 }
 
-.navitem, .hollyitem, .footerelem a, a:hover {
+.navitem, .footerelem a, a:hover {
   color: #5499C7;
   text-decoration: none;
 }
 
-.navitem, .hollyitem, .footerelem a, a:active {
+.navitem, .footerelem a, a:active {
     color: #424242;
     text-decoration: none;
 }
@@ -313,12 +310,12 @@ footer p {
   }
 
   #intro-content {
-  text-align: left;
-  display: inline-block;
-  max-width: 70%;
-  font-size: 1.3rem;
-  vertical-align: middle;
-}
+    text-align: left;
+    display: inline-block;
+    max-width: 70%;
+    font-size: 1.3rem;
+    vertical-align: middle;
+  }
   .nav {
     position: fixed;
     width: 100%;
@@ -335,8 +332,9 @@ footer p {
   }
 
   .menu a {
+    font-size: 1rem;
     display: inline-block;
-    margin: 0 10px; /*top&bottom, left&right*/
+    margin: 0 7px; /*top&bottom, left&right*/
     line-height: 70px; /*so that when both icons are hidden it will be centered up?? */
   }
 
@@ -349,10 +347,7 @@ footer p {
   }
 }
 
-}
-
 @media only screen and (min-width: 991px) {
-
   .casestudy-content {
     position: relative;
     left: 60px;
@@ -392,12 +387,8 @@ footer p {
   }
 
   i {
-    font-style: bold !important;
-  }
-
-  /* Add an active class to the active dropdown button */
-  .active {
-    font-style: bold;
+    font-style: normal;
+    color: #424242;
   }
 
   /* Dropdown container (hidden by default) */
