@@ -9,7 +9,7 @@ html, body {
   vertical-align: baseline;
   color: #424242;
   overflow-x: hidden;
-  font-family: proxima-nova, sans-serif;
+  font-family: benton-sans, sans-serif;
 }
 
 #proto_playtest {
@@ -103,14 +103,14 @@ label {
   max-width: 80%;
   text-align: left;
   display: inline-block;
-  font-size: 1.3rem;
+  font-size: 1rem;
   vertical-align: middle;
 }
 
 #intro-content h1 {
   padding: 0;
   margin-bottom: 0;
-
+  font-weight: normal;
 }
 
 #hollylist {
@@ -160,11 +160,10 @@ label {
   text-align: center;
   padding: 10px;
   margin-top: 30px;
-  width: 100%;
 }
 
 .casestudy-content {
-  max-width: 800px;
+  max-width: 100%;
   display: inline-block;
   text-align: left;
 }
@@ -254,7 +253,7 @@ footer p {
 /* Tablet Styles */
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
   body {
-    font-size: 1.2em;
+    font-size: 1em;
   }
   .case-container {
     display: inline-block;
@@ -268,9 +267,8 @@ footer p {
   display: none;
 }
 .casestudy-container {
-  width: 100%;
   text-align: center;
-  padding: 10px;
+  padding: 30px;
   margin-top: 30px;
 }
 
@@ -286,6 +284,7 @@ footer p {
 @media only screen and (min-width: 991px) {
   body {
     font-size: 1rem;
+    line-height: 1.5;
   }
   /******** Side Navigation **************/
   .no-italics {
@@ -308,13 +307,13 @@ footer p {
     text-align: left;
     display: inline-block;
     max-width: 65%;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     vertical-align: middle;
     margin-bottom: 28px;
   }
 
   #intro-content h1 {
-    font-size: 3.2em;
+    font-weight: normal;
   }
   .nav {
     position: fixed;
@@ -349,7 +348,7 @@ footer p {
   .casestudy-content {
     position: relative;
     left: 60px;
-    width: 75%;
+    max-width: 800px;
   }
 
 /* Fixed sidenav, full height */
