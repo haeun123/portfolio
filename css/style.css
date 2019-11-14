@@ -111,7 +111,7 @@ label {
 #intro-content h1 {
   padding: 0;
   margin-bottom: 0;
-  font-weight: normal;
+  font-weight: 600;
 }
 
 #hollylist {
@@ -309,14 +309,14 @@ footer p {
   #intro-content {
     text-align: left;
     display: inline-block;
-    max-width: 65%;
+    max-width: 800px;
     font-size: 1.2rem;
     vertical-align: middle;
     margin-bottom: 28px;
   }
 
   #intro-content h1 {
-    font-weight: normal;
+    font-weight: 500;
   }
   .nav {
     position: fixed;
