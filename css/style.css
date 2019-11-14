@@ -28,6 +28,7 @@ label {
   float: right;
 }
 .art-container {
+  padding-top: 50px;
   margin-left: 20%;
   margin-right: 20%;
 }
