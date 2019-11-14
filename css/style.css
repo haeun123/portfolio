@@ -292,7 +292,9 @@ footer p {
       font-style: normal;  
       float: none; 
   }
-
+  .art-container {
+    padding-top: 130px;
+  }
   .case-container {
     display: inline-block;
     width: 40%;
