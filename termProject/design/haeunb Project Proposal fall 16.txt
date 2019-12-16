@@ -1,0 +1,20 @@
+Haeun Bang (haeunb)
+15-112 Section H
+TP1 Project Proposal
+
+My program will be a side-scrolling game based on a underwater
+setting where the user will navigate through and interact with
+randomly and purposefully generated predators/obstacles to win.
+As the player advances in level and scores higher, the predator entities
+become more complex and sophisticated in their interaction with 
+the user to create a more challenging experience until the player
+achieves a certain level of criteria and wins.
+I will not use any other modules besides tkinter to create this
+program. I hope to randomize the details, but overall have levels
+and a sense of a path in my game that makes it an ideal balance 
+between strictly hardcoded games and soley score-based repetitive
+side scrollers. 
+In order to have the player interact with more complex obstacles/
+predators as the level goes up, I will have to implement some sort
+of simulated AI to have the game be more interactive with the user.
+
