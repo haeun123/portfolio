@@ -31,3 +31,11 @@ function yesno(thecheckbox, thelabel, thenav) {
     navvar.style.backgroundColor = 'rgba(255, 255, 255, 0.9)';
   }
 }
+function highlight(x) {
+  x.style.borderTop = "8px solid";
+  /* need to figure out how to override inheritance of a:hover in css? */
+}
+
+function normalImg(x) {
+  x.style.borderTop = "none";
+}
