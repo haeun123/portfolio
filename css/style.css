@@ -70,17 +70,19 @@ label {
   z-index: 3;
 }
 
+.hollypark {
+  padding-left: 20px;
+  font-weight: 300;
+}
 .sidenav {
   display: none;
 }
 
-/* index html gallery */
-.unfinished {
+.about {
   z-index: 1;
-  min-height: 400px;
+  min-height: 420px;
   padding-top: 100px;
   text-align: center;
-  font-size: 2em;
 }
 
 #work {
@@ -99,31 +101,21 @@ label {
 #intro-container {
   text-align: center;
   display: block;
-  margin-bottom: 40px;
   padding-top: 30px;
+  padding-bottom: 40px;
+  width: 100%
+  height: 75%;
 }
 
 #intro-content {
-  max-width: 80%;
+  max-width: 70%;
   text-align: left;
   display: inline-block;
-  font-size: 1rem;
-  vertical-align: middle;
 }
 
 #intro-content h1 {
   padding: 0;
   margin-bottom: 0;
-  font-weight: 500;
-}
-
-#hollylist {
-    list-style-position: inside;
-    list-style-type: none;
-    display: inline-block;
-    float: left;
-    text-align: left;
-    padding-left: 15px;
 }
 
 #navlist {
@@ -245,10 +237,23 @@ footer p {
   color: #636363;
 }
 
+#backtotop {
+  color: #653ade;
+  font-weight: bold;
+}
+
 /* Tablet Styles */
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
   body {
     font-size: 1em;
+  }
+  #intro-container {
+    text-align: left;
+    padding-left: 40px;
+    padding-bottom: 40px;
+  }
+  #intro-content {
+
   }
   .case-container {
     display: inline-block;
@@ -281,42 +286,28 @@ footer p {
     font-size: 1rem;
     line-height: 1.5;
   }
-  /******** Side Navigation **************/
+
   .no-italics {
       font-style: normal;  
       float: none; 
   }
-  .art-container {
-    padding-top: 130px;
 
-  }
-  .art-container .img-container {
-    display: inline-block;
-    width: 30%;
-    height: auto;
-  }
-  .case-container {
-    display: inline-block;
-    width: 30%;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-bottom: 5px;
+  .hollypark {
+    padding-left: 35px;
   }
 
   #intro-container {
     margin-top: 45px;
+    text-align: center;
+    padding-bottom: 30px;
   }
   #intro-content {
     text-align: left;
     display: inline-block;
-    max-width: 800px;
-    font-size: 1.2rem;
+    max-width: 500px;
+    padding-left: 70px;
     vertical-align: middle;
-    margin-bottom: 28px;
-  }
-
-  #intro-content h1 {
-    font-weight: 500;
+    margin-bottom: 70px;
   }
   .nav {
     position: fixed;
@@ -348,6 +339,23 @@ footer p {
     display: none;
   }
 
+  .art-container {
+    padding-top: 130px;
+
+  }
+  .art-container .img-container {
+    display: inline-block;
+    width: 30%;
+    height: auto;
+  }
+  .case-container {
+    display: inline-block;
+    width: 30%;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+
   .casestudy-content {
     position: relative;
     left: 60px;
@@ -364,7 +372,7 @@ footer p {
     top: 0;
     left: 0;
     overflow-x: hidden;
-    padding-top: 80px;
+    padding-top: 150px;
   }
 
   /* Style the sidenav links and the dropdown button */
