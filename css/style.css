@@ -136,7 +136,7 @@ label {
 }
 
 .activePage {
-  font-weight: bold;
+  color: #653ade;
 }
 
 .navitem, .footerelem a, a:link {
@@ -288,6 +288,12 @@ footer p {
   }
   .art-container {
     padding-top: 130px;
+
+  }
+  .art-container .img-container {
+    display: inline-block;
+    width: 30%;
+    height: auto;
   }
   .case-container {
     display: inline-block;
