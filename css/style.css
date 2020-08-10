@@ -131,6 +131,16 @@ label {
   color: #653ade;
 }
 
+.footerelem {
+
+}
+
+.footerelem #emailme {
+  display: block;
+}
+.footerelem a img {
+  max-width: 30px;
+}
 .navitem, .footerelem a, a:link {
   color: #424242;
   text-decoration: none;
@@ -377,6 +387,7 @@ footer p {
 
   /* Style the sidenav links and the dropdown button */
   .sidenav a, .dropdown-btn {
+    font-family: 'benton-sans', sans-serif;
     padding: 3px 5px 3px 16px;
     text-decoration: none;
     font-size: 1em;
@@ -395,12 +406,14 @@ footer p {
   }
 
   i {
+    font-family: 'benton-sans', sans-serif;
     font-style: normal;
     color: #424242;
   }
 
   /* Dropdown container (hidden by default) */
   .dropdown-container {
+    font-family: 'benton-sans', sans-serif;
     display: none;
     background-color: #f7f7f7;
     padding-left: 10px;
