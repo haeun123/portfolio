@@ -69,12 +69,7 @@ label {
   position: fixed;
   z-index: 3;
 }
-/*
-.hollypark {
-  line-height: 3.5rem;
-  padding-left: 25px;
-  font-weight: 300;
-}*/
+
 .sidenav {
   display: none;
 }
@@ -233,7 +228,8 @@ footer {
 }
 
 #footerlist {
-  margin-top: 70px;
+  margin-top: 50px;
+  margin-bottom: 40px;
   text-align: center;
   list-style-position: inside;
   list-style-type: none;
@@ -300,7 +296,7 @@ footer p {
     padding-left: 35px;
   }
   #intro-container {
-    margin-top: 45px;
+    margin-top: 65px;
     text-align: center;
     padding-bottom: 30px;
   }
@@ -308,7 +304,7 @@ footer p {
     text-align: left;
     display: inline-block;
     max-width: 500px;
-    padding-left: 70px;
+    padding-left: 50px;
     vertical-align: middle;
     margin-bottom: 70px;
   }
@@ -324,7 +320,6 @@ footer p {
   .case-container {
     display: inline-block;
     width: 30%;
-    height: 200px;
     overflow: hidden;
     margin: 5px 5px 5px 5px;
   }
@@ -394,7 +389,6 @@ footer p {
   .case-container {
     display: inline-block;
     width: 30%;
-    height: 230px;
     overflow: hidden;
     margin: 5px 5px 5px 5px;
   }
@@ -426,7 +420,7 @@ footer p {
   .case-container {
     display: inline-block;
     width: 30%;
-    height: 250px;
+
     overflow: hidden;
     margin: 5px 5px 5px 5px;
   }
@@ -442,7 +436,6 @@ footer p {
   .case-container {
     display: inline-block;
     width: 30%;
-    height: 280px;
     overflow: hidden;
     margin: 5px 5px 5px 5px;
   }
