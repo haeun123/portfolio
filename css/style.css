@@ -26,8 +26,8 @@ label {
   display: block;
   cursor: pointer;
   margin: 0 1rem 0 0;
-  font-size: 2rem;
-  line-height: 2.5em;
+  font-size: 1.5rem;
+  line-height: 1em;
   float: right;
 }
 .art-container {
@@ -55,8 +55,8 @@ label {
 .menu a {
   display: block;
   text-decoration: none;
-  margin: 0;
-  font-size: 1.3rem;
+  margin: 1;
+  font-size: 1rem;
   line-height: 2em;
 }
 
@@ -69,11 +69,12 @@ label {
   position: fixed;
   z-index: 3;
 }
-
+/*
 .hollypark {
-  padding-left: 20px;
+  line-height: 3.5rem;
+  padding-left: 25px;
   font-weight: 300;
-}
+}*/
 .sidenav {
   display: none;
 }
@@ -99,12 +100,10 @@ label {
 }
 
 #intro-container {
-  text-align: center;
-  display: block;
-  padding-top: 30px;
-  padding-bottom: 40px;
+  text-align: left;
+  padding-left: 30px;
+  padding-bottom: 30px;
   width: 100%
-  height: 75%;
 }
 
 #intro-content {
@@ -113,9 +112,8 @@ label {
   display: inline-block;
 }
 
-#intro-content h1 {
-  padding: 0;
-  margin-bottom: 0;
+.hollypark {
+  padding-left: 30px;
 }
 
 #navlist {
@@ -138,24 +136,27 @@ label {
 .footerelem a img {
   max-width: 30px;
 }
-.navitem, .footerelem a, a:link {
+
+a:link {
   color: #424242;
   text-decoration: none;
 }
-
-.navitem, .footerelem a, a:visited {
+a:visited {
   color: #424242;
   text-decoration: none;
 }
-
-.navitem, .footerelem a, a:hover {
-  color: #653ade;
+a:active {
+  color: #424242;
   text-decoration: none;
 }
-
-.navitem, .footerelem a, a:active {
-    color: #424242;
-    text-decoration: none;
+a:hover {
+  color: #d4bd92;
+  font-style: italic;
+  text-decoration: none;
+}
+.navitem, .footerelem a {
+  color: #424242;
+  text-decoration: none;
 }
 
 /* for individual case study pages */
@@ -228,9 +229,11 @@ footer {
   height: 200px;
   text-align: center;
   margin-top: 100px;
+  margin-bottom: 75px;
 }
 
 #footerlist {
+  margin-top: 70px;
   text-align: center;
   list-style-position: inside;
   list-style-type: none;
@@ -258,9 +261,7 @@ footer p {
     padding-left: 40px;
     padding-bottom: 40px;
   }
-  #intro-content {
 
-  }
   .case-container {
     display: inline-block;
     width: 46%;
@@ -291,16 +292,13 @@ footer p {
     font-size: 1rem;
     line-height: 1.5;
   }
-
   .no-italics {
       font-style: normal;  
       float: none; 
   }
-
   .hollypark {
     padding-left: 35px;
   }
-
   #intro-container {
     margin-top: 45px;
     text-align: center;
@@ -314,45 +312,15 @@ footer p {
     vertical-align: middle;
     margin-bottom: 70px;
   }
-  .nav {
-    position: fixed;
-    width: 100%;
-    height: 70px;
-    line-height: 70px; /* center everything vertically??*/
-  }
-
-  .menu {
-    float: right;
-    width: auto;
-    display: block;
-    margin: 0 30px 0 0; /*top right bottom left*/
-
-  }
-
-  .menu a {
-    font-size: 1rem;
-    display: inline-block;
-    margin: 0 7px; /*top&bottom, left&right*/
-    line-height: 70px; /*so that when both icons are hidden it will be centered up?? */
-  }
-
-  label {
-    display: none;
-  }
-
-  .cross {
-    display: none;
-  }
 
   .art-container {
     padding-top: 130px;
-
   }
   .art-container .img-container {
     display: inline-block;
+    width: 200px;
+    height: auto;
   }
-
-
   .case-container {
     display: inline-block;
     width: 30%;
@@ -363,20 +331,19 @@ footer p {
 
   .casestudy-content {
     position: relative;
-    left: 60px;
-    max-width: 800px;
+    left: 70px;
+    max-width: 700px;
   }
 
 /* Fixed sidenav, full height */
   .sidenav {
     display: inline-block;
     height: 100%;
-    width: 200px;
+    width: 160px;
     position: fixed;
     z-index: 2;
     top: 0;
     left: 0;
-    overflow-x: hidden;
     padding-top: 150px;
   }
 
@@ -397,7 +364,7 @@ footer p {
 
   /* On mouse-over */
   .sidenav a:hover, .dropdown-btn:hover {
-    color: green;
+    color: #424242;
   }
 
   i {
@@ -410,7 +377,6 @@ footer p {
   .dropdown-container {
     font-family: 'benton-sans', sans-serif;
     display: none;
-    background-color: #f7f7f7;
     padding-left: 10px;
     font-size: 0.8rem;
   }
@@ -432,6 +398,21 @@ footer p {
     overflow: hidden;
     margin: 5px 5px 5px 5px;
   }
+  .sidenav {
+    display: inline-block;
+    height: 100%;
+    width: 190px;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    padding-top: 150px;
+  }
+  .casestudy-content {
+    position: relative;
+    left: 70px;
+    max-width: 750px;
+  }
 }
 
 /* * * * * * * * DESKTOP STYLES * * * * * * * */
@@ -449,8 +430,7 @@ footer p {
     overflow: hidden;
     margin: 5px 5px 5px 5px;
   }
-}
-
+  }
 /* * * * * * * * DESKTOP STYLES * * * * * * * */
 
 @media only screen and (min-width: 1230px) {
@@ -465,5 +445,30 @@ footer p {
     height: 280px;
     overflow: hidden;
     margin: 5px 5px 5px 5px;
+  }
+
+  .nav {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    line-height: 70px; /* center everything vertically??*/
+  }
+  .menu {
+    float: right;
+    width: auto;
+    display: block;
+    margin: 0 40px 0 0; /*top right bottom left*/
+  }
+  .menu a {
+    font-size: 0.9rem;
+    display: inline-block;
+    margin: 0 5px; /*top&bottom, left&right*/
+    line-height: 70px; /*so that when both icons are hidden it will be centered up?? */
+  }
+  label {
+    display: none;
+  }
+  .cross {
+    display: none;
   }
 }
