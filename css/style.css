@@ -270,19 +270,18 @@ footer p {
     margin-top: 6px;
   }
   .sidenav {
-  display: none;
-}
-.casestudy-container {
-  text-align: center;
-  padding: 30px;
-  margin-top: 30px;
-}
-
-.casestudy-content {
-  width: 100%;
-  display: inline-block;
-  text-align: left;
-}
+    display: none;
+  }
+  .casestudy-container {
+    text-align: center;
+    padding: 30px;
+    margin-top: 30px;
+  }
+  .casestudy-content {
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+  }
 }
 
 /* * * * * * * * DESKTOP STYLES * * * * * * * */
@@ -357,7 +356,7 @@ footer p {
   .case-container {
     display: inline-block;
     width: 30%;
-    height: 245px;
+    height: 200px;
     overflow: hidden;
     margin: 5px 5px 5px 5px;
   }
@@ -417,3 +416,54 @@ footer p {
   }
 }
 
+
+/* * * * * * * * DESKTOP STYLES * * * * * * * */
+
+@media only screen and (min-width: 1050px) {
+  body {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .case-container {
+    display: inline-block;
+    width: 30%;
+    height: 230px;
+    overflow: hidden;
+    margin: 5px 5px 5px 5px;
+  }
+}
+
+/* * * * * * * * DESKTOP STYLES * * * * * * * */
+
+@media only screen and (min-width: 1150px) {
+  body {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .case-container {
+    display: inline-block;
+    width: 30%;
+    height: 250px;
+    overflow: hidden;
+    margin: 5px 5px 5px 5px;
+  }
+}
+
+/* * * * * * * * DESKTOP STYLES * * * * * * * */
+
+@media only screen and (min-width: 1230px) {
+  body {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .case-container {
+    display: inline-block;
+    width: 30%;
+    height: 280px;
+    overflow: hidden;
+    margin: 5px 5px 5px 5px;
+  }
+}
