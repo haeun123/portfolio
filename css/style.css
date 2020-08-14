@@ -26,7 +26,7 @@ label {
   display: block;
   cursor: pointer;
   margin: 0 1rem 0 0;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   line-height: 1em;
   float: right;
 }
@@ -55,8 +55,8 @@ label {
 .menu a {
   display: block;
   text-decoration: none;
-  margin: 1;
-  font-size: 1rem;
+  margin: 0;
+  font-size: 0.9rem;
   line-height: 2em;
 }
 
@@ -96,9 +96,9 @@ label {
 
 #intro-container {
   text-align: left;
-  padding-left: 30px;
+  margin-left: 30px;
   padding-bottom: 30px;
-  width: 100%
+  max-width: 100%
 }
 
 #intro-content {
@@ -281,6 +281,14 @@ footer p {
     display: inline-block;
     text-align: left;
   }
+  .art-container {
+    padding-top: 130px;
+  }
+  .art-container .img-container {
+    display: inline-block;
+    width: 200px;
+    height: auto;
+  }
 }
 
 /* * * * * * * * DESKTOP STYLES * * * * * * * */
@@ -312,15 +320,6 @@ footer p {
     vertical-align: middle;
     margin-bottom: 70px;
   }
-
-  .art-container {
-    padding-top: 130px;
-  }
-  .art-container .img-container {
-    display: inline-block;
-    width: 200px;
-    height: auto;
-  }
   .case-container {
     display: inline-block;
     width: 30%;
@@ -343,7 +342,8 @@ footer p {
     z-index: 2;
     top: 0;
     left: 0;
-    padding-top: 150px;
+    padding-left: 30px;
+    padding-top: 100px;
   }
 
   /* Style the sidenav links and the dropdown button */
@@ -454,12 +454,12 @@ footer p {
     float: right;
     width: auto;
     display: block;
-    margin: 0 40px 0 0; /*top right bottom left*/
+    margin: 0 25px 0 0; /*top right bottom left*/
   }
   .menu a {
-    font-size: 0.9rem;
+    /*font-size: 1rem;*/
     display: inline-block;
-    margin: 0 5px; /*top&bottom, left&right*/
+    margin: 0 2px; /*top&bottom, left&right*/
     line-height: 70px; /*so that when both icons are hidden it will be centered up?? */
   }
   label {
