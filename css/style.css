@@ -65,8 +65,8 @@ label {
 } 
 
 .nav {
-  width: 100%;
-  position: fixed;
+  width: 50%;
+  float: right;
   z-index: 3;
 }
 
@@ -102,7 +102,7 @@ label {
 }
 
 #intro-content {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   max-width: 70%;
   text-align: left;
   display: inline-block;
@@ -454,8 +454,8 @@ footer p {
   }
 
   .nav {
-    position: fixed;
-    width: 100%;
+    float: right;
+    width: 50%;
     height: 70px;
     line-height: 70px; /* center everything vertically??*/
   }
