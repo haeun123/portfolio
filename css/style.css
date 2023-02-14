@@ -102,6 +102,7 @@ label {
 }
 
 #intro-content {
+  font-size: 1.7rem;
   max-width: 70%;
   text-align: left;
   display: inline-block;
