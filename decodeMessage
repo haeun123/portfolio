@@ -1,0 +1,84 @@
+"""
+import json
+
+from apiclient import discovery
+from httplib2 import Http
+from oauth2client import client, file, tools
+
+file_path = "./credentials.json"
+ 
+# Open the file in write mode
+with open(file_path, 'w') as file:
+    # Write content to the file
+    file.write("")
+     
+print(f"File '{file_path}' created successfully.")
+
+file_path = "./token.json"
+
+# Open the file in write mode
+with open(file_path, 'w') as file:
+    # Write content to the file
+    file.write("")
+    
+
+# Set doc ID, as found at `https://docs.google.com/document/d/YOUR_DOC_ID/edit`
+DOCUMENT_ID = "2PACX-1vRMx5YQlZNa3ra8dYYxmv-QIQ3YJe8tbI3kqcuC7lQiZm-CSEznKfN_HYNSpoXcZIV3Y_O3YoUB1ecq"
+
+# Set the scopes and discovery info
+SCOPES = "https://www.googleapis.com/auth/documents.readonly"
+DISCOVERY_DOC = "https://docs.googleapis.com/$discovery/rest?version=v1"
+
+# Initialize credentials and instantiate Docs API service
+store = file.Storage("C:/Users/haeun/Projects/Portfolio/portfolio/token.json")
+creds = store.get()
+if not creds or creds.invalid:
+  flow = client.flow_from_clientsecrets("credentials.json", SCOPES)
+  creds = tools.run_flow(flow, store)
+service = discovery.build(
+    "docs",
+    "v1",
+    http=creds.authorize(Http()),
+    discoveryServiceUrl=DISCOVERY_DOC,
+)
+
+# Do a document "get" request and print the results as formatted JSON
+result = service.documents().get(documentId=DOCUMENT_ID).execute()
+print(json.dumps(result, indent=4, sort_keys=True))
+"""
+
+def decode_message(tableList):
+    #tableList = sort_table(tableList)
+    currentX = 0
+    currentY = tableList[0][2] #set y-axis
+    #decodedMessage = []
+    for i in (0, len(tableList)-1): #for each row in table
+        cellX = tableList[i][0]
+        cellValue = tableList[i][1]
+        cellY = tableList[i][2]
+        if cellY == currentY and cellX == currentX:
+            #decodedMessage[currentY]
+            print(cellValue, end='')
+            print("cellY==currentY and cellX==currentX")
+        elif cellY < currentY:
+            currentY -= 1
+            currentX = 0
+            print("\n")
+            print(cellValue, end='')
+            #print("cellY > currentY")
+        elif cellY == currentY and cellX > currentX:
+            print(" ")
+            #print("cellX>currentX")
+        else:
+            print("error")
+        currentX += 1
+
+#def sort_table(tableList):
+    return tableList
+
+decode_message([[0,"█",2],[1,"▀",2],[2,"▀",2],[3,"▀",2],[0,"█",1],[1,"▀",1],[2,"▀",1],[0,"█",0]])
+
+#decode_message([[0,"█",0],[0,"█",1],[0,"█",2],[1,"▀",1],[1,"▀",2],[2,"▀",1],[2,"▀",2],[3,"▀",2]])
+
+print("hey", end='')
+print("whatsup")
